@@ -5,6 +5,7 @@ import html from "./clip.html";
 import { comboinc } from "./effects/Combo";
 import { Height } from "./effects/Height";
 import { Left } from "./effects/Left";
+import { Opacity } from "./effects/Opacity";
 import { Width } from "./effects/Width";
 
 import initParams from "./initParams";
@@ -40,5 +41,6 @@ const clip = new HTMLClip({
 //   0
 // );
 // clip.addIncident(Height(".text-bg-wrapper", 910, "3000px"), 6210);
-clip.addIncident(comboinc(".items-root"), 0);
+clip.addIncident(comboinc(".items-looper"), 0);
+
 export { clip };

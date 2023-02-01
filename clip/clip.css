@@ -66,8 +66,8 @@
 .text-bg-wrapper{
   background-color: #52b9b6;
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 0px;
+  height: 0px;
   color: #fff;
   top: 540px;
   left: 1340px;
@@ -106,7 +106,18 @@
   height: 100%;
   top: 0;
   left: 0;
+  /* background-color: black; */
+}
+
+.item-bg{
+  position: absolute;
   background-color: black;
+  top: 540px;
+  left: 1340px ;
+  transform: translate(-50%, -50%);
+  width: 0px;
+  height: 0px;
+  border-radius: 999999px;
 }
 
 .item-text-wrapper{
@@ -132,14 +143,14 @@
 
 .item-image-wrapper{
   position: absolute;
-  width: 930px;
-  height: 930px;
+  width: 0px;
+  height: 0px;
   border-radius: 999999px;
   background-color: #fff;
   top: 540px;
   left: 1340px ;
   transform: translate(-50%, -50%);
-
+  overflow: hidden;
 }
 .image-wrapper{
   width: 930px;
