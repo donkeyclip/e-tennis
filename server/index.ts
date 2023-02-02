@@ -87,6 +87,7 @@ const player = new Player({
   clip,
   ...playerOptions,
   visible: "always",
+  timeFormat: "ms",
   onMillisecondChange: (ms) => {
     clearTimeout(timeout);
     timeout = setTimeout(() => {

@@ -61,6 +61,40 @@ export const comboinc = (selector) =>
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
+              fontSize: "40px",
+            },
+            initialValues: {
+              fontSize: 0,
+            },
+          },
+          props: {
+            duration: 410,
+            selector: " .item-title",
+            easing: "easeInOutCubic",
+          },
+          position: 560,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              fontSize: "35px",
+            },
+            initialValues: {
+              fontSize: 0,
+            },
+          },
+          props: {
+            duration: 410,
+            selector: " .item-description",
+            easing: "easeInOutCubic",
+          },
+          position: 660,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
               transform: {
                 rotate: "90deg",
               },
@@ -74,7 +108,6 @@ export const comboinc = (selector) =>
           props: {
             duration: 4000,
             selector: ".image-wrapper svg",
-            // repeats: 2,
           },
           position: 150,
         },
@@ -95,6 +128,23 @@ export const comboinc = (selector) =>
             selector: ".item-image-wrapper ",
           },
           position: 200,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              opacity: 0,
+            },
+            initialValues: {
+              opacity: 1,
+            },
+          },
+          props: {
+            duration: 1,
+            selector: ".item-img ",
+            delay: "@pattern(2000,4000)",
+          },
+          position: 0,
         },
         {
           incidentClass: CSSEffect,

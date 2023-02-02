@@ -55,7 +55,7 @@
   </div> -->
 
 
-  <div class="items-root">
+  <!-- <div class="items-root">
     <div class="items-looper" mc-for="key,item" mc-of="initParams.products">
 
       <div class="text-bg-wrapper">
@@ -67,8 +67,20 @@
       </div>
       <div class="item-bg "></div>
       <div class="item-text-wrapper">
-        <div class="item-title">{{item.name}}</div>
-        <div class="item-description">{{item.description}}</div>
+        <div class="item-title" style="width: calc({{item.name.length}} * 24px);">
+          <div mc-for="key,later" mc-of="item.name">{{later}}
+            <div mc-if="later === ' '">
+              &nbsp;
+            </div>
+          </div>
+        </div>
+        <div class="item-description" style="width: calc({{item.description.length}} * 20px);">
+          <div mc-for="key,later" mc-of="item.description">{{later}}
+            <div mc-if="later === ' '">
+              &nbsp;
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="item-image-wrapper ">
@@ -96,15 +108,33 @@
               </textPath>
             </text>
           </svg>
-          <div class="tr-center item-img" mc-for="key,image" mc-of="item.images"
-            style="background-image:url({{image}});">
-
+          <div class="tr-center item-img" mc-for="kle,image" mc-of="item.images"
+            style="background-image:url({{image}}); z-index: calc(-{{kle}});">
+            {{kle}}
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
+
+
+  <div class="buy-wrapper">
+    <div class="text-bg-wrapper">
+      <div class="bg-absolute-wrapper">
+        <div class="text-bg" mc-for="key,item" mc-of="15"> e-tennis.gr e-tennis.gr e-tennis.gr e-tennis.gr
+          e-tennis.gre-tennis.gre-tennis.gre-tennis.gre-tennis.gr
+        </div>
+      </div>
+    </div>
+    <div class="grid-wrapper">
+      <div class="looper" mc-for="key,item" mc-of="initParams.products">
+        <div class="img"
+          style="background-image: url({{item.images[0]}}); width: calc( 1080px/{{initParams.products.length}}  ); height:calc( {{initParams.products.length}}/1080px );">
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
