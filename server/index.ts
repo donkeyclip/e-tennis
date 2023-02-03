@@ -88,6 +88,7 @@ const player = new Player({
   ...playerOptions,
   visible: "always",
   timeFormat: "ms",
+  pointerEvents: true,
   onMillisecondChange: (ms) => {
     clearTimeout(timeout);
     timeout = setTimeout(() => {

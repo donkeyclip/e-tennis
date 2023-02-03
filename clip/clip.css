@@ -45,8 +45,6 @@
 }
 
 .img{
-  width: 440px;
-  height: 440px;
   background-color: #fff;
   background-size: contain;
   border-radius: 99999px;
@@ -192,12 +190,95 @@
   height: 100%;
 }
 .grid-wrapper{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 1080px;
+  width: 1920px;
 }
 
 .looper{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-button{
+  background-color: #4eb8af;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+ opacity: 0;
+}
+
+.link-button:hover{
+  background-color: #70dfd5;
+}
+
+.cards{
+  align-items: stretch;
+  width: 1920px;
+  height: 1080px;  
+  display: flex;
+  margin: 20px auto;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  padding: 50px;
+}
+
+.card{
+  height: 100%;
+  display: block;
+  position: relative;
+  transition: .2s;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.card:hover {
+  transition: all .2s ease;
+  width: 1500px !important;
+ }
+
+ .card-img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: absolute;
+ }
+
+ .button-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.192);
+  width: 100%;
+  height: 100%;
+ }
+
+ .button-wrapper:hover{
+  background-color:transparent
+ }
+
+ .button-wrapper:hover > .link-button {
+  opacity: 1;
+ }
+
+
+ .svgwave{
+  position: absolute;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
