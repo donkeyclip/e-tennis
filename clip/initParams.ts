@@ -5,7 +5,7 @@ export default [
       products: [
         {
           name: "Nike Revolution 6 Next Nature",
-          description: "Γυναικεία Παπούτσοα για Τρέξιμο",
+          description: "Γυναικεία Παπούτσια για Τρέξιμο",
           images: [
             "https://www.e-tennis.gr/pub/media/catalog/product/cache/f5f3da80ad7b670245aea7e970662954/d/c/dc3729-003-phsrh000-1500.webp",
             "https://www.e-tennis.gr/pub/media/catalog/product/cache/f5f3da80ad7b670245aea7e970662954/d/c/dc3729-101-phsrh000-1500.webp",

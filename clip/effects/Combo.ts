@@ -16,7 +16,7 @@ export const comboinc = (selector) =>
             },
           },
           props: {
-            duration: 10,
+            duration: 1,
             easing: "easeInBack",
           },
           position: 0,
@@ -25,8 +25,8 @@ export const comboinc = (selector) =>
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              width: "3000px",
-              height: "3000px",
+              width: "2000px",
+              height: "2000px",
             },
             initialValues: {
               width: "0px",
@@ -43,8 +43,8 @@ export const comboinc = (selector) =>
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              width: "3000px",
-              height: "3000px",
+              width: "2000px",
+              height: "2000px",
             },
             initialValues: {
               width: "0px",
@@ -61,7 +61,7 @@ export const comboinc = (selector) =>
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              fontSize: "40px",
+              fontSize: "24px",
             },
             initialValues: {
               fontSize: 0,
@@ -78,7 +78,7 @@ export const comboinc = (selector) =>
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              fontSize: "35px",
+              fontSize: "20px",
             },
             initialValues: {
               fontSize: 0,
@@ -115,8 +115,8 @@ export const comboinc = (selector) =>
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              width: "930px",
-              height: "930px",
+              width: "520px",
+              height: "520px",
             },
             initialValues: {
               width: "0px",
@@ -140,7 +140,7 @@ export const comboinc = (selector) =>
             },
           },
           props: {
-            duration: 10,
+            duration: 1,
             selector: ".item-img ",
             delay: "@pattern(2000,4000)",
           },
@@ -157,7 +157,7 @@ export const comboinc = (selector) =>
             },
           },
           props: {
-            duration: 10,
+            duration: 1,
           },
           position: 4000,
         },

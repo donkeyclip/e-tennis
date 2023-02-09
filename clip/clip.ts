@@ -18,8 +18,8 @@ const clip = new HTMLClip({
   initParamsValidationRules,
   initParams: initParams[0].value,
   containerParams: {
-    width: "1920px",
-    height: "1080px",
+    width: "1280px",
+    height: "720px",
   },
   fonts: [
     {
@@ -34,14 +34,14 @@ clip.addIncident(
   0
 );
 
-clip.addIncident(Opacity(".intro", 10, 0, 0), 3732);
+clip.addIncident(Opacity(".intro", 1, 0, 0), 3732);
 clip.addIncident(comboinc(".items-looper"), 3730);
 
 clip.addIncident(
   Width(
     ".buy-wrapper > .text-bg-wrapper",
     900,
-    "3000px",
+    "2000px",
     "@expression(ceil(initParams.products.length * 4240))"
   ),
   0
@@ -50,7 +50,7 @@ clip.addIncident(
   Height(
     ".buy-wrapper > .text-bg-wrapper",
     900,
-    "3000px",
+    "2000px",
     "@expression(ceil(initParams.products.length * 4240))"
   ),
   0
@@ -65,21 +65,21 @@ clip.addIncident(
   ),
   0
 );
-// clip.addIncident(
-//   Opacity(
-//     ".svgwave",
-//     10,
-//     1,
-//     "@expression(ceil(initParams.products.length * 4240)+900)"
-//   ),
-//   0
-// );
+clip.addIncident(
+  Opacity(
+    ".svgwave",
+    10,
+    1,
+    "@expression(ceil(initParams.products.length * 4240)+901)"
+  ),
+  0
+);
 clip.addIncident(
   Opacity(
     ".cards",
-    10,
     1,
-    "@expression(ceil(initParams.products.length * 4240)+900)"
+    1,
+    "@expression(ceil(initParams.products.length * 4240)+902)"
   ),
   0
 );
