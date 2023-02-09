@@ -29,18 +29,59 @@ const clip = new HTMLClip({
   ],
 });
 
-// clip.addIncident(Left(".img-wrapper", 3730, "-460px"), 3270);
+clip.addIncident(
+  Left(".img-wrapper", 3730, "@expression(initParams.products.length * -90)px"),
+  0
+);
+
+clip.addIncident(Opacity(".intro", 10, 0, 0), 3732);
+clip.addIncident(comboinc(".items-looper"), 3730);
+
+clip.addIncident(
+  Width(
+    ".buy-wrapper > .text-bg-wrapper",
+    900,
+    "3000px",
+    "@expression(ceil(initParams.products.length * 4240))"
+  ),
+  0
+);
+clip.addIncident(
+  Height(
+    ".buy-wrapper > .text-bg-wrapper",
+    900,
+    "3000px",
+    "@expression(ceil(initParams.products.length * 4240))"
+  ),
+  0
+);
+
+clip.addIncident(
+  Opacity(
+    ".text-bg-wrapper",
+    10,
+    0,
+    "@expression(ceil(initParams.products.length * 4240) +900)"
+  ),
+  0
+);
 // clip.addIncident(
-//   Width(
-//     ".text-bg-wrapper",
-//     "@expression(initParams.products[0].images.length * 1000)",
-//     "3000px",
-//     "@expression(initParams.products[0].images.length * 1000)"
+//   Opacity(
+//     ".svgwave",
+//     10,
+//     1,
+//     "@expression(ceil(initParams.products.length * 4240)+900)"
 //   ),
-//   // 6210
 //   0
 // );
-// clip.addIncident(Height(".text-bg-wrapper", 910, "3000px"), 6210);
-clip.addIncident(comboinc(".items-looper"), 0);
+clip.addIncident(
+  Opacity(
+    ".cards",
+    10,
+    1,
+    "@expression(ceil(initParams.products.length * 4240)+900)"
+  ),
+  0
+);
 
 export { clip };

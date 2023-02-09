@@ -24,6 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 1;
 }
 
 .carusel-wrapper{
@@ -48,6 +49,8 @@
   background-color: #fff;
   background-size: contain;
   border-radius: 99999px;
+  width: 400px;
+  height: 400px;
 }
 
 .footer{
@@ -211,9 +214,10 @@
   color: #fff;
   border: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 30px;
   padding: 10px 15px;
  opacity: 0;
+ text-decoration: none;
 }
 
 .link-button:hover{
@@ -222,14 +226,13 @@
 
 .cards{
   align-items: stretch;
-  width: 1920px;
-  height: 1080px;  
+  width: 1832px;
+  height: 1030px;  
   display: flex;
-  margin: 20px auto;
+  z-index: 1;
   overflow: hidden;
   position: absolute;
-  right: 0;
-  padding: 50px;
+  opacity: 0;
 }
 
 .card{
@@ -276,9 +279,21 @@
 
  .svgwave{
   position: absolute;
-  position: absolute;
   width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
  }
+
+#s{
+  display: block;
+  overflow: visible;
+  padding: 1em;
+  fill: transparent;
+}
+
+#tp{
+fill: black;
+}
+

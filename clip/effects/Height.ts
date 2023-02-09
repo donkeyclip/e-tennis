@@ -1,7 +1,7 @@
 /*This incident is export as function so you can use it more than one times*/
 
 import { CSSEffect } from "@donkeyclip/motorcortex";
-export const Height = (selector, duration, value, easing = "linear") =>
+export const Height = (selector, duration, value, delay, easing = "linear") =>
   new CSSEffect(
     {
       animatedAttrs: {
@@ -12,5 +12,6 @@ export const Height = (selector, duration, value, easing = "linear") =>
       selector,
       duration,
       easing,
+      delay,
     }
   );

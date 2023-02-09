@@ -16,7 +16,7 @@ export const comboinc = (selector) =>
             },
           },
           props: {
-            duration: 1,
+            duration: 10,
             easing: "easeInBack",
           },
           position: 0,
@@ -140,7 +140,7 @@ export const comboinc = (selector) =>
             },
           },
           props: {
-            duration: 1,
+            duration: 10,
             selector: ".item-img ",
             delay: "@pattern(2000,4000)",
           },
@@ -157,7 +157,7 @@ export const comboinc = (selector) =>
             },
           },
           props: {
-            duration: 1,
+            duration: 10,
           },
           position: 4000,
         },

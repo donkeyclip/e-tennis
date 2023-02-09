@@ -7,9 +7,6 @@ export const Opacity = (selector, duration, value, delay, easing = "linear") =>
       animatedAttrs: {
         opacity: value,
       },
-      initialValues: {
-        opacity: 0,
-      },
     },
     {
       selector,
