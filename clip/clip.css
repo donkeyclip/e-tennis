@@ -10,6 +10,7 @@
 
 .root{
   height: 100%;
+  background: black;
 }
 
 .header{
@@ -187,7 +188,7 @@
 
 .buy-wrapper{
   position: absolute;
-  left: 0;
+  left: -100%;
   top: 0;
   width: 100%;
   height: 100%;
@@ -218,6 +219,9 @@
   padding: 10px 15px;
  opacity: 0;
  text-decoration: none;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .link-button:hover{
@@ -266,6 +270,7 @@ opacity: 0;
   background-color: rgba(0, 0, 0, 0.192);
   width: 100%;
   height: 100%;
+  overflow: hidden;
  }
 
  .button-wrapper:hover{
@@ -297,3 +302,9 @@ opacity: 0;
 fill: black;
 }
 
+@media only screen and (max-width: 600px) {
+  .link-button {
+    width: 300px;
+    height: 60px;
+  }
+}

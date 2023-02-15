@@ -30,7 +30,12 @@ const clip = new HTMLClip({
 });
 
 clip.addIncident(
-  Left(".img-wrapper", 3730, "@expression(initParams.products.length * -90)px"),
+  Left(
+    ".img-wrapper",
+    3730,
+    "@expression(initParams.products.length * -90)px",
+    0
+  ),
   0
 );
 
@@ -39,8 +44,8 @@ clip.addIncident(comboinc(".items-looper"), 3730);
 
 clip.addIncident(
   Width(
-    ".buy-wrapper > .text-bg-wrapper",
-    900,
+    ".text-bg-last",
+    600,
     "2000px",
     "@expression(ceil(initParams.products.length * 4240))"
   ),
@@ -48,8 +53,8 @@ clip.addIncident(
 );
 clip.addIncident(
   Height(
-    ".buy-wrapper > .text-bg-wrapper",
-    900,
+    ".text-bg-last",
+    600,
     "2000px",
     "@expression(ceil(initParams.products.length * 4240))"
   ),
@@ -58,10 +63,10 @@ clip.addIncident(
 
 clip.addIncident(
   Opacity(
-    ".text-bg-wrapper",
+    ".text-bg-last",
     10,
     0,
-    "@expression(ceil(initParams.products.length * 4240) +900)"
+    "@expression(ceil(initParams.products.length * 4240) +600)"
   ),
   0
 );
@@ -70,7 +75,16 @@ clip.addIncident(
     ".svgwave",
     10,
     1,
-    "@expression(ceil(initParams.products.length * 4240)+901)"
+    "@expression(ceil(initParams.products.length * 4240)+601)"
+  ),
+  0
+);
+clip.addIncident(
+  Left(
+    ".buy-wrapper",
+    1,
+    "0px",
+    "@expression(ceil(initParams.products.length * 4240)+602)"
   ),
   0
 );
@@ -79,7 +93,7 @@ clip.addIncident(
     ".cards",
     1,
     1,
-    "@expression(ceil(initParams.products.length * 4240)+902)"
+    "@expression(ceil(initParams.products.length * 4240)+602)"
   ),
   0
 );
