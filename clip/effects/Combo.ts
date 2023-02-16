@@ -61,7 +61,7 @@ export const comboinc = (selector) =>
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              fontSize: "24px",
+              fontSize: "44px",
             },
             initialValues: {
               fontSize: 0,
@@ -78,10 +78,44 @@ export const comboinc = (selector) =>
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
-              fontSize: "20px",
+              letterSpacing: "0px",
+            },
+            initialValues: {
+              letterSpacing: "22px",
+            },
+          },
+          props: {
+            duration: 410,
+            selector: " .item-title",
+            easing: "easeInOutCubic",
+          },
+          position: 560,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              fontSize: "34px",
             },
             initialValues: {
               fontSize: 0,
+            },
+          },
+          props: {
+            duration: 410,
+            selector: " .item-description",
+            easing: "easeInOutCubic",
+          },
+          position: 660,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              letterSpacing: "0px",
+            },
+            initialValues: {
+              letterSpacing: "16px",
             },
           },
           props: {

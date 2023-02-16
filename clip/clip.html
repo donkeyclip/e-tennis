@@ -57,19 +57,11 @@
       </div>
       <div class="item-bg "></div>
       <div class="item-text-wrapper">
-        <div class="item-title" style="width: calc({{item.name.length}} * 14px);">
-          <div mc-for="key,later" mc-of="item.name">{{later}}
-            <div mc-if="later === ' '">
-              &nbsp;
-            </div>
-          </div>
+        <div class="item-title">
+          {{item.name}}
         </div>
-        <div class="item-description" style="width: calc({{item.description.length}} * 10px);">
-          <div mc-for="key,later" mc-of="item.description">{{later}}
-            <div mc-if="later === ' '">
-              &nbsp;
-            </div>
-          </div>
+        <div class="item-description">
+          {{item.description}}
         </div>
       </div>
 

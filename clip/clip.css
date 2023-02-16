@@ -126,19 +126,24 @@
   left: 70px;
   position: absolute;
   top: 180px;
-  width: 513px;
+  width: 442px;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-evenly;
+  align-items: flex-start;
+
 }
 
 .item-title{
   font-size: 0px;
   font-weight: 700;
   color:#4eb8af ;
-
   display: flex;
   justify-content: space-between;
-  
-  height: 30px;
   align-items: flex-end;
+  font-size: 44px;
+  margin-bottom: 15px;
 }
 
 .item-description{
@@ -147,9 +152,8 @@
   color: #fff;
   display: flex;
   justify-content: space-between;
-    
-    height: 35px;
-    align-items: flex-end;
+  align-items: flex-end;
+  font-size: 34px;
 }
 
 
