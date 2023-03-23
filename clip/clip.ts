@@ -1,4 +1,4 @@
-import { HTMLClip } from "@donkeyclip/motorcortex";
+import { HTMLClip, setCSSCore } from "@donkeyclip/motorcortex";
 import id from "server/id";
 import css from "./clip.css";
 import html from "./clip.html";
@@ -7,6 +7,8 @@ import { Height } from "./effects/Height";
 import { Left } from "./effects/Left";
 import { Opacity } from "./effects/Opacity";
 import { Width } from "./effects/Width";
+import AnimePluginDefinition from "@donkeyclip/motorcortex-anime";
+setCSSCore(AnimePluginDefinition.CSSEffect);
 
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";

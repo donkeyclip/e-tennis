@@ -75,7 +75,7 @@
   left: 893px;
   border-radius: 9999px;
   overflow: hidden;
-  transform: translate(-50%,-50%);
+  /* transform: translate(-50%,-50%); */
 }
 .bg-absolute-wrapper{
   height: 1333px;
@@ -158,13 +158,9 @@
   background-color: #fff;
   top: 360px;
   left: 893px ;
-  transform: translate(-50%, -50%);
   overflow: hidden;
 }
-.image-wrapper{
-  width: 930px;
-  height: 930px;
-}
+
 
 .tr-center{
   left: 50%;

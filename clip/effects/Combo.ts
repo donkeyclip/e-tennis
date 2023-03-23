@@ -27,10 +27,14 @@ export const comboinc = (selector) =>
             animatedAttrs: {
               width: "2000px",
               height: "2000px",
+              top: "-640px",
+              left: "-106px",
             },
             initialValues: {
               width: "0px",
               height: "0px",
+              top: "360px",
+              left: "894px",
             },
           },
           props: {
@@ -39,6 +43,7 @@ export const comboinc = (selector) =>
           },
           position: 0,
         },
+
         {
           incidentClass: CSSEffect,
           attrs: {
@@ -186,10 +191,14 @@ export const comboinc = (selector) =>
             animatedAttrs: {
               width: "520px",
               height: "520px",
+              top: "100px",
+              left: "634px",
             },
             initialValues: {
               width: "0px",
               height: "0px",
+              top: "360px",
+              left: "894px",
             },
           },
           props: {
