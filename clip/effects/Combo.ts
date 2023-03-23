@@ -43,6 +43,24 @@ export const comboinc = (selector) =>
           incidentClass: CSSEffect,
           attrs: {
             animatedAttrs: {
+              top: "640px",
+              left: "107px",
+            },
+            initialValues: {
+              top: "-360px",
+              left: "-893px",
+            },
+          },
+          props: {
+            duration: 510,
+            selector: ".text-bg ",
+          },
+          position: 0,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
               width: "2000px",
               height: "2000px",
             },
@@ -56,6 +74,23 @@ export const comboinc = (selector) =>
             selector: " .item-bg",
           },
           position: 150,
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+            animatedAttrs: {
+              width: "164px",
+            },
+            initialValues: {
+              width: "0px",
+            },
+          },
+          props: {
+            duration: 410,
+            selector: " .nike-logo",
+            easing: "easeInOutCubic",
+          },
+          position: 420,
         },
         {
           incidentClass: CSSEffect,
