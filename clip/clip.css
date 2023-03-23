@@ -161,6 +161,10 @@
   overflow: hidden;
 }
 
+.text-bg-last-child{
+  top: -360px;
+  left: -893px
+}
 
 .tr-center{
   left: 50%;

@@ -12,6 +12,7 @@ setCSSCore(AnimePluginDefinition.CSSEffect);
 
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
+import { Top } from "./effects/Top";
 
 const clip = new HTMLClip({
   html,
@@ -62,7 +63,45 @@ clip.addIncident(
   ),
   0
 );
-
+clip.addIncident(
+  Top(
+    ".text-bg-last",
+    600,
+    "-640px",
+    "@expression(ceil(initParams.products.length * 4240))"
+  ),
+  0
+);
+clip.addIncident(
+  Left(
+    ".text-bg-last",
+    600,
+    "-106px",
+    "@expression(ceil(initParams.products.length * 4240))"
+  ),
+  0
+);
+clip.addIncident(
+  Top(
+    ".text-bg-last-child",
+    600,
+    "640px",
+    "@expression(ceil(initParams.products.length * 4240))"
+  ),
+  0
+);
+clip.addIncident(
+  Left(
+    ".text-bg-last-child",
+    600,
+    "106px",
+    "@expression(ceil(initParams.products.length * 4240))"
+  ),
+  0
+);
+//.text-bg-last-child
+// top: "640px",
+// left: "107px",
 clip.addIncident(
   Opacity(
     ".text-bg-last",

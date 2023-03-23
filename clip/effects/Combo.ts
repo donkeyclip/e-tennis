@@ -28,7 +28,7 @@ export const comboinc = (selector) =>
               width: "2000px",
               height: "2000px",
               top: "-640px",
-              left: "-106px",
+              left: "-107px",
             },
             initialValues: {
               width: "0px",
@@ -53,7 +53,7 @@ export const comboinc = (selector) =>
             },
             initialValues: {
               top: "-360px",
-              left: "-893px",
+              left: "-894px",
             },
           },
           props: {
